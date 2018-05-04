@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+
+        body{
+            background: #c7bcc2;
+            font-family: verdana;
+            letter-spacing: 0.1em;
+            color: brown;
+            font-weight: bold;
+            margin-left: 60px;
+        }
+        i{
+            text-decoration: underline;
+            font-style: normal;
+        }
+        b{
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+        input, select{
+            background: #ca686d;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,.5);
+            font-size: 18px;
+            font-weight: bold;
+        }
+        input:hover,
+        input:focus,
+        select:hover,
+        select:focus{
+            background: #a83d43;
+        }
+        #photo{
+            box-shadow: 0 3px 6px rgba(0,0,0,.5);
+            background-image: url(szafa1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: blue;
+            width: 250px;
+            height: 250px;
+            position: fixed;
+            top: 100px;
+            left: 600px;
+            text-align: center;
+            border: 7px solid #ca686d;
+            border-radius: 15px;
+        }
+        .linia{
+             border: 0; height: 5px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(168, 61, 67, 0.75), rgba(0, 0, 0, 0));
+        }
+        .linia1{
+             border: 0; height: 5px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(168, 61, 67, 0.75), rgba(0, 0, 0, 0));
+        }
+        button{
+            background: #ca686d;
+            color: antiquewhite;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 7px;
+            padding: 6px 18px;
+            border: none;
+            box-shadow: 0 3px 6px rgba(0,0,0,.5);
+        }
+        button:hover{
+            background: #a83d43; 
+        }
+    </style>
+</head>
+<body class="page">
+
+<hr class="linia1">
+      <div id="szafa">
+          
+          <input type="number" name="wys" id="wys" min="220" value="220"><label for="wys"> - wyskość szafy</label><br><br>
+          <input type="number" name="szer" id="szer" value="200" min="120"><label for="szer"> - szerokość szafy</label><br><br>
+          <input type="number" name="gleb" id="gleb" value="70" min="40"><label for="gleb"> - głębokość szafy</label><br><br>
+          <input type="number" name="doors" id="doors" value="2" min="2" max="4"><label for="doors"> - ilość drzwi</label><br><br>
+          <input type="number" name="wysNads" id="wysNads" value="50" min="25" max="100"><label for="wysNads"> - wysokość nadstawki</label><br><br>
+          <input type="number" name="szerReg" id="szerReg" min="40" value="120"><label for="szerReg"> - szerokość regału/ów</label><br><br>
+          <input type="number" name="iloscBoczkow" id="iloscBoczkow" value="0"min="0" max="2"><label for="iloscBoczkow"> - ilość boczków</label><br><br>
+          <input type="number" name="iloscReg" id="iloscReg" value="2"min="1" max="4"><label for="iloscReg"> - ilość regałów</label><br><br>
+          <div class="reg1">
+              <select name="reg1" id="reg1">
+                 <option value="0"  selected="selected">...</option>
+                  <option value="1">1x szuflada</option>
+                  <option value="2">2x szuflada</option>
+                  <option value="3">3x szuflada</option>
+                  <option value="4">1x półka</option>
+                  <option value="5">2x półka</option>
+                  <option value="6">3x półka</option>
+                  <option value="7">4x półka</option>
+              </select>
+              <label for="reg1"> - wnętrze regału 1#</label><br><br>
+          </div>
+          <div class="reg2">
+              <select name="reg2" id="reg2">
+                 <option value="0"  selected="selected">...</option>
+                  <option value="1">1x szuflada</option>
+                  <option value="2">2x szuflada</option>
+                  <option value="3">3x szuflada</option>
+                  <option value="4">1x półka</option>
+                  <option value="5">2x półka</option>
+                  <option value="6">3x półka</option>
+                  <option value="7">4x półka</option>
+              </select>
+              <label for="reg2"> - wnętrze regału 2#</label><br><br></div>
+          <div class="reg3">
+              <select name="reg3" id="reg3">
+                  <option value="0"  selected="selected">...</option>
+                  <option value="1">1x szuflada</option>
+                  <option value="2">2x szuflada</option>
+                  <option value="3">3x szuflada</option>
+                  <option value="4">1x półka</option>
+                  <option value="5">2x półka</option>
+                  <option value="6">3x półka</option>
+                  <option value="7">4x półka</option>
+              </select>
+              <label for="reg3"> - wnętrze regału 3#</label><br><br></div>
+          <div class="reg4">
+              <select name="reg4" id="reg4">
+                  <option value="0"  selected="selected">...</option>
+                  <option value="1">1x szuflada</option>
+                  <option value="2">2x szuflada</option>
+                  <option value="3">3x szuflada</option>
+                  <option value="4">1x półka</option>
+                  <option value="5">2x półka</option>
+                  <option value="6">3x półka</option>
+                  <option value="7">4x półka</option>
+              </select>
+              <label for="reg4"> - wnętrze regału 4#</label><br><br></div>
+      </div>
+      <hr class="linia">
+      <div id="wynik"></div>
+      <div id="photo"></div>
+      <hr class="linia"> 
+      <button onclick="printX()">Drukuj</button>
+
+      
+         
+            
+               
+                  
+                        
+       
+<script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    var szer ;
+    var gleb;
+    var wys;
+    var iloscReg;
+    var iloscBoczkow;
+    var iloscDrzwi;
+    var wysNads;
+    var szerReg;
+    
+    $('#szafa').change(function test(){
+//obliczWnetrze();
+        wys = parseFloat($('#wys').val());
+        gleb = parseFloat($('#gleb').val());
+        szer = parseFloat($('#szer').val());
+        iloscReg = $('#iloscReg').val();
+        wysNads = parseFloat($('#wysNads').val());
+        szerReg = parseFloat($('#szerReg').val());
+        iloscDrzwi = parseFloat($('#doors').val());
+ 
+        
+//ilosc regalow version 1.
+        var wnetrze1 = $('#reg1').val();
+        var wnetrze2 = $('#reg2').val();
+        var wnetrze3 = $('#reg3').val();
+        var wnetrze4 = $('#reg4').val();
+        
+        switch(iloscReg){
+            case "1":
+                $('.reg1').css('display', 'block');
+                $('.reg2').css('display', 'none');
+                $('.reg3').css('display', 'none');
+                $('.reg4').css('display', 'none');
+                break;    
+            case "2":
+                $('.reg1').css('display', 'block');
+                $('.reg2').css('display', 'block');
+                $('.reg3').css('display', 'none');
+                $('.reg4').css('display', 'none');
+                break;
+            case "3":
+                $('.reg1').css('display', 'block');
+                $('.reg2').css('display', 'block');
+                $('.reg3').css('display', 'block');
+                $('.reg4').css('display', 'none');
+                break;
+            case "4":
+                $('.reg1').css('display', 'block');
+                $('.reg2').css('display', 'block');
+                $('.reg3').css('display', 'block');
+                $('.reg4').css('display', 'block');
+                break;
+            default:
+                $('.reg1').css('display', 'block');
+                $('.reg2').css('display', 'none');
+                $('.reg3').css('display', 'none');
+                $('.reg4').css('display', 'none');
+        };
+//koniec ilosc regalow, wyswietlanie pola wyboru 
+        
+    
+//wnetrze regalu1.........................
+        var wnetrze1 = $('#reg1').val();
+        var text1;
+        switch(wnetrze1){
+            case "0":
+                text1 = "";
+                break;
+            case "1":
+                text1  = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 2szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 2szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "2":
+                text1 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 4szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 4szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "3":
+                text1 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 6szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 6szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "4":
+                text1 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 1szt.</p>';
+                break;
+            case "5":
+                text1 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 2szt.</p>';
+                break;
+            case "6":
+                text1 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 3szt.</p>';
+                break;
+            case "7":
+                text1 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 4szt.</p>';
+                break;
+            default :
+                text1 = "";
+            };
+        var wynik = $('#wynik')[0].innerHTML = text1;
+//koniec wnetrze regalu1....................
+        
+//wnetrze regalu2..........................
+        var wnetrze2 = $('#reg2').val();
+        var text2;
+        switch(wnetrze2){
+            case "0":
+                text2 = "";
+                break;
+            case "1":
+                text2  = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 2szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 2szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "2":
+                text2 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 4szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 4szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "3":
+                text2 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 6szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 6szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "4":
+                text2 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 1szt.</p>';
+                break;
+            case "5":
+                text2 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 2szt.</p>';
+                break;
+            case "6":
+                text2 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 3szt.</p>';
+                break;
+            case "7":
+                text2 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 4szt.</p>';
+                break;
+            default :
+                text2 = "";
+            };
+        wynik += text2;
+//koniec wnetrze regalu2....................
+
+//wnetrze regalu1...........................
+        var wnetrze3 = $('#reg3').val(); 
+        var text3;
+        switch(wnetrze3){
+            case "0":
+                text3 = "";
+                break;
+            case "1":
+                text3  = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 2szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 2szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "2":
+                text3 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 4szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 4szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "3":
+                text3 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 6szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 6szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "4":
+                text3 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 1szt.</p>';
+                break;
+            case "5":
+                text3 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 2szt.</p>';
+                break;
+            case "6":
+                text3 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 3szt.</p>';
+                break;
+            case "7":
+                text3 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 4szt.</p>';
+                break;
+            default :
+                text3 = "";
+            };
+        
+        wynik += text3;
+//koniec wnetrze regalu3....................
+//wnetrze regalu4...........................
+        var wnetrze4 = $('#reg4').val();
+        var text4;
+
+        switch(wnetrze4){
+            case "0":
+                text4 = "";
+                break;
+            case "1":
+                text4  = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 2szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 2szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "2":
+                text4 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 4szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 4szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "3":
+                text4 = '<p><i>' + (((szerReg - (3.6 * iloscReg))/ iloscReg)-6.2).toPrecision(3) + '</i> x 18 - 6szt.</p><p><i>' + (gleb - 10) + '</i> x 18 - 6szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - 1szt.</p>';
+                break;
+            case "4":
+                text4 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 1szt.</p>';
+                break;
+            case "5":
+                text4 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 2szt.</p>';
+                break;
+            case "6":
+                text4 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 3szt.</p>';
+                break;
+            case "7":
+                text4 = '<p><i>' + (((szerReg - 3.6 * iloscReg)/iloscReg)).toPrecision(3) + '</i> x ' + (gleb - 11) + ' - 4szt.</p>';
+                break;
+            default :
+                text4 = "";
+            };
+        wynik += text4;
+//koniec wnetrze regalu4....................
+//ilosc boczkow.............................   
+        iloscBoczkow = $('#iloscBoczkow').val();
+        var textBoczki;
+        switch(iloscBoczkow){
+            case "1":
+                textBoczki = '<p><i>'+ wys + '</i> x '+ gleb +' - 1szt.</p><p><b>' + wys + '</b> x 10 - 1szt.</p>'; 
+                break;    
+            case "2":
+                textBoczki ='<p><i>'+ wys + '</i> x '+ gleb + ' - 2szt.</p>';
+                break;
+            default:
+                textBoczki = '<p><b>' + wys + '</b> x 10 - 2szt.</p>';
+        };
+        
+//koniec ilosc boczkow.........................
+        
+//obliczanie wymiarów szafy.........................
+       
+        var drzwi ='<p>'+(wys - 4)+' x '+((szer-(iloscDrzwi * 2.5))/iloscDrzwi).toPrecision(3)+' - '+ iloscDrzwi+'szt.</p>';     
+        var boczekNadstawki = '<p><i>'+ (wysNads)+'</i>' + ' x ' + (gleb - 10 ) + ' - ' + (2*iloscReg) + 'szt.</p>';
+        var regaly = '<p><i>' +(wys - wysNads - 2) + '</i> x  <i>' + (gleb - 10) + '</i> - '+ (2*iloscReg)+ 'szt.</p><p><i>' + ((szerReg - (3.6 * iloscReg))/ iloscReg).toPrecision(3) + '</i> x ' + (gleb - 10) + ' - ' + (4*iloscReg) + 'szt.</p>'; 
+        
+            
+            
+            
+        wynik = $('#wynik')[0].innerHTML = text1 + text2 + text3 + text4 + textBoczki + drzwi + boczekNadstawki + regaly;
+       
+        
+  }); 
+  //-------wyswietlanie koloru tla z szafa----------
+    document.getElementById("wys").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa3.png)";
+    });
+    document.getElementById("szer").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa2.png)";
+    });
+    document.getElementById("gleb").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa4.png)";
+    });
+    document.getElementById("doors").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa5.png)";
+    });
+    document.getElementById("wysNads").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa7.png)";
+    });
+    document.getElementById("szerReg").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa8.png)";
+    });
+    document.getElementById("iloscBoczkow").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa9.png)";
+    });
+    document.getElementById("iloscReg").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa10.png)";
+    });
+    document.getElementById("reg1").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    });
+    document.getElementById("reg2").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    });
+    document.getElementById("reg3").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    });
+    document.getElementById("reg4").addEventListener("mouseover", function() {
+    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    });
+//-------koniec wyswietlanie koloru tla z szafa----------
+//-------drukowanie wyniku-------------------------------
+
+    function printX() {
+
+            window.print();
+
+            
+
+
+          
+        
+    
+}
+    
+
+</script>
+</body>
+</html>
