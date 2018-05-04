@@ -379,40 +379,40 @@
   }); 
   //-------wyswietlanie koloru tla z szafa----------
     document.getElementById("wys").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa3.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa1.png)";
     });
     document.getElementById("szer").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa2.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa2.png)";
     });
     document.getElementById("gleb").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa4.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa4.png)";
     });
     document.getElementById("doors").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa5.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa5.png)";
     });
     document.getElementById("wysNads").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa7.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa7.png)";
     });
     document.getElementById("szerReg").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa8.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa8.png)";
     });
     document.getElementById("iloscBoczkow").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa9.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa9.png)";
     });
     document.getElementById("iloscReg").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa10.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa10.png)";
     });
     document.getElementById("reg1").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa11.png)";
     });
     document.getElementById("reg2").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa11.png)";
     });
     document.getElementById("reg3").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa11.png)";
     });
     document.getElementById("reg4").addEventListener("mouseover", function() {
-    document.getElementById("photo").style.backgroundImage = "url(szafa11.png)";
+    document.getElementById("photo").style.backgroundImage = "url(https://github.com/bojuPro/store/blob/master/szafa11.png)";
     });
 //-------koniec wyswietlanie koloru tla z szafa----------
 //-------drukowanie wyniku-------------------------------
